@@ -21,6 +21,8 @@ public class CardEvents : MonoBehaviour
                     ATK;
     public GameObject panelHP;
 
+    
+    public AudioSource wav;
   
     
 
@@ -42,11 +44,12 @@ public class CardEvents : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Mouse0) && Input.mousePosition.x >= 117 && Input.mousePosition.x <= 408 && Input.mousePosition.y >= 64 && Input.mousePosition.y <= 514)
         {
             panelName.SetActive(true);
-            
+            wav.Play();
         }
         if (Input.GetKeyDown(KeyCode.Mouse1) && Input.mousePosition.x >= 117 && Input.mousePosition.x <= 408 && Input.mousePosition.y >= 64 && Input.mousePosition.y <= 514)
         {
             panelHP.SetActive(true);
+            wav.Play();
         }
        
         
